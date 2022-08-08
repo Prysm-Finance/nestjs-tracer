@@ -6,7 +6,8 @@
   "scripts": {
     "docs": "typedoc --out docs --mode modules",
     "build": "rm -fr *.js *.d.ts *.js.map request-context && tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "author": "migue.masx@gmail.com",
   "repository": "https://github.com/MiguelSavignano/nestjs-tracer",
@@ -32,6 +33,7 @@
   },
   "dependencies": {
     "circular-json": "^0.5.9",
+    "dd-trace": "^2.12.2",
     "uuid": "^3.3.2"
   }
 }
